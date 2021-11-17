@@ -44,6 +44,12 @@
     border: none;
     outline: none;
     border-radius: 8px;
+    outline-offset: -10px;
+    transition: all .3s ease;
+}
+.sing-form__input:focus {
+    outline: 1px solid deeppink;
+    outline-offset: 0;
 }
 
 .sing-form__input_password {
@@ -92,7 +98,7 @@
     }
     
     .sign-form__title {
-        margin: 50px 0 80px;
+        margin: 50px auto 80px;
     }
     
     .sign-form__question {
