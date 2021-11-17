@@ -1,0 +1,27 @@
+.header {
+    height: 74px;
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 38px;
+    width: 38px;
+    background-image: url(../../images/logo.svg);
+    background-size: contain;
+}
+
+@media (max-width: 1250px) {
+    .header {
+        width: 708px;
+    }
+}
+
+@media (max-width: 730px) {
+    .header {
+        width: 292px;
+    }
+}

@@ -1,0 +1,138 @@
+.about-project {
+    width: 1140px;
+    margin: auto;
+    padding: 110px 0;
+}
+
+.about-project__title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 23px;
+    margin: 0;
+}
+
+.about-project__descriptions {
+    margin-top: 77px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-project__description {
+    width: 550px;
+}
+
+.about-project__subtitle {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+}
+
+.about-project__text {
+    margin: 19px 0 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.about-project__diagram {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 4fr;
+    grid-template-rows: 36px;
+    margin-top: 110px;
+}
+
+.about-project__diagram-element {
+    align-self: center;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-project__diagram-element_type_black {
+    background-color: #000;
+    color: #fff;
+}
+
+.about-project__diagram-element_type_gray {
+    background-color: #f2f2f2;
+}
+
+.about-project__diagram-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A0A0A0;
+    margin-top: 14px;
+}
+
+@media (max-width: 1250px) {
+    .about-project {
+        width: 668px;
+        padding: 90px 0;
+    }
+    .about-project__descriptions {
+        margin-top: 70px;
+    }
+    .about-project__description {
+        width: 319px;
+    }
+    .about-project__text {
+        margin-top: 22px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .about-project__diagram {
+        margin-top: 93px;
+    }
+}
+@media (max-width: 730px) {
+    .about-project {
+        width: 284px;
+        padding: 70px 0;
+    }
+    .about-project__title {
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 28px;
+    }
+    .about-project__descriptions {
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    .about-project__description {
+        width: 100%;
+    }    
+    .about-project__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }    
+    .about-project__text {
+        margin: 19px 0 56px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .about-project__diagram {
+        grid-template-rows: 35px;
+        margin-top: 4px;
+    }
+    
+    .about-project__diagram-element {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .about-project__diagram-text {
+        font-size: 11px;
+        line-height: 13px;
+        margin-top: 10px;
+    }
+}

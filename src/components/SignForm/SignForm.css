@@ -1,0 +1,103 @@
+.sign-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-fom__container {
+    height: 560px;
+    width: 396px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-form__logo {
+    width: 38px;
+}
+
+.sign-form__title {
+    margin: 40px 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.sing-form__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.sing-form__label {
+    font-size: 10px;
+    line-height: 12px;
+    color: #A0A0A0;
+}
+
+.sing-form__input {
+    margin: 10px 0;
+    height: 46px;
+    padding: 0 15px;
+    background-color: #F9F9F9;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.sing-form__input_password {
+    color: #FF4062;
+}
+
+.sing-form__span {
+    font-size: 10px;
+    line-height: 12px;
+    color: #FF4062;
+    height: 12px;
+}
+
+.sign-form__submit {
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.sign-form__question {
+    margin: 16px 0 0;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A0A0A0;
+}
+
+.sign-form__link {
+    color: #000000;
+}
+
+@media (max-width: 730px) {
+    .sign-fom__container {
+        height: 100%;
+        width: 260px;
+    }
+    
+    .sign-form__logo {
+        margin-top: 56px;
+        align-self: center;
+    }
+    
+    .sign-form__title {
+        margin: 50px 0 80px;
+    }
+    
+    .sign-form__question {
+        margin: 14px 0 30px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
