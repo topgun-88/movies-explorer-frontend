@@ -18,7 +18,7 @@ const MoviesCardList = ({
 
     return (
         <section className='card-list'>
-            {filteredMovies.slice(0, Math.min(filteredMovies.length, cardsCount)).map((card, i) => {
+            {filteredMovies.slice(0, Math.min(filteredMovies.length, isSaved ? filteredMovies.length : cardsCount)).map((card, i) => {
                     return  <MoviesCard
                         key={card.nameRU}
                         card={card}

@@ -47,7 +47,7 @@ const Movies = ({
             }
         }
     }, [])
-console.log(filteredMovies.length)
+    
     return (
         <main className='movies'>
             <SearchForm 

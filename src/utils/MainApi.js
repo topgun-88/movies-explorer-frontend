@@ -130,5 +130,5 @@ class MainApi {
 };
 
 export default new MainApi({
-    adress: 'http://localhost:3000'
+    adress: 'https://api.topgun.nomoredomains.work'
 });
