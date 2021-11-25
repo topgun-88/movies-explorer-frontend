@@ -63,6 +63,15 @@
     height: 12px;
 }
 
+.sign-form__error {
+    font-size: 11px;
+    line-height: 12px;
+    color: #FF4062;
+    height: 14px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
 .sign-form__submit {
     height: 45px;
     width: 100%;
@@ -72,6 +81,13 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+}
+.sign-form__submit:disabled {
+    cursor: default;
+    opacity: .1;
+}
+.sign-form__submit_active:hover {
+    opacity: 1;
 }
 
 .sign-form__question {
