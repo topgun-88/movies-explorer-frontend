@@ -2,18 +2,31 @@ import React from "react";
 import './MoviesCardList.css';
 import MoviesCard from "../MoviesCard/MoviesCard";
 
-const MoviesCardList = ({cards, isShorts, isSaved}) => {
-    const [filteredCards, setFilteredCards] = React.useState(cards)
-
+const MoviesCardList = ({
+    savedMovies,
+    isSaved,
+    filteredMovies,
+    saveMovie,
+    deleteMovie,
+    cardsCount
+}) => {
+    const [savedCardsId, setSavedCardsId] = React.useState([]);
+    
     React.useEffect(() => {
-        isShorts ? setFilteredCards(cards.filter(card => card.duration <= 40)) : setFilteredCards(cards)
-        // eslint-disable-next-line
-    }, [isShorts])
+        setSavedCardsId(Object.keys(savedMovies));
+    }, [savedMovies]);
 
     return (
         <section className='card-list'>
-            {filteredCards.map(el => {
-                return <MoviesCard key={el.nameRU} card={el} isSaved={isSaved}/>
+            {filteredMovies.slice(0, Math.min(filteredMovies.length, isSaved ? filteredMovies.length : cardsCount)).map((card, i) => {
+                    return  <MoviesCard
+                        key={card.nameRU}
+                        card={card}
+                        isSaved={isSaved}
+                        isLiked={savedCardsId.includes(card.id.toString())}
+                        saveMovie={saveMovie}
+                        deleteMovie={deleteMovie}
+                    />
             })}
         </section>
     );

@@ -1,0 +1,6 @@
+.movies__error {
+    color: red;
+    text-align: center;
+    padding: 50px 10%;
+    word-wrap: break-word;
+}

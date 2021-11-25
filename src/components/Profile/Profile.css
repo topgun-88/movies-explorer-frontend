@@ -56,6 +56,15 @@
     outline-offset: -10px;
     transition: all .3s ease;
 }
+.profile__error {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-size: 11px;
+    line-height: 12px;
+    color: #FF4062;
+    height: 14px;
+}
 .profile__label-span {
     z-index: 10;
 }
@@ -64,6 +73,20 @@
     outline-offset: 10px;
 }
 
+.profile__submit:disabled {
+    opacity: .6;
+    cursor: default;
+}
+.profile__responce {
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+}
+.profile__responce_fail {
+    color: #FF004C;
+}
 .profile__submit {
     font-size: 13px;
     line-height: 16px;
